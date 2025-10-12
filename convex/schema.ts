@@ -11,7 +11,8 @@ export default defineSchema({
 
 
     plans: defineTable({
-        userId: v.id("users"),
+        // userId: v.id("users"),
+        userId: v.string(),
         name: v.string(),
         workoutPlan: v.object({
             schedule: v.array(v.string()),
@@ -40,8 +41,5 @@ export default defineSchema({
     })
     .index("by_user_id", ["userId"])
     .index("by_active", ["isActive"])
-    
-
-
 
 })
