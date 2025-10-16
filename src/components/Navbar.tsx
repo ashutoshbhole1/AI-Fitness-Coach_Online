@@ -2,11 +2,11 @@
 import Link from 'next/link';
 
 import {
-    Link as LinkIcon, ZapIcon, HomeIcon, UserIcon, DumbbellIcon,
+    Link as  ZapIcon, HomeIcon, UserIcon, DumbbellIcon,
 } from "lucide-react";
 
 
-import { Button, buttonVariants } from './ui/button';
+import { Button } from './ui/button';
 import React from 'react'
 import { UserButton, useUser } from "@clerk/nextjs";
 import { SignInButton, SignUpButton } from '@clerk/nextjs'
