@@ -19,7 +19,8 @@ import {
 
 const ProfilePage = () => {
   const { user } = useUser();
-  const userId = user?.id as string;
+  const userId = "user_33y79UAUWOKe1iQr9OoSAYLyCH6"; //ASHU CHANGE
+  // const userId = user?.id as string;
 
   const allPlans = useQuery(api.plans.getUserPlans, { userId });
   const [selectedPlanId, setSelectedPlanId] = useState<null | string>(null);

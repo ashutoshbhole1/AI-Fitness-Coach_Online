@@ -50,7 +50,7 @@ export const createPlan = mutation({
 
 export const getUserPlans = query({
   args: { userId: v.string() },
-  // args: { userId: v.string() },
+  // args: { userId: v.string() },        
   handler: async (ctx, args) => {
     const plans = await ctx.db
       .query("plans")
